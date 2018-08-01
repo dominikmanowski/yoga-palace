@@ -1,0 +1,21 @@
+.row
+  max-width: $grid-width
+  margin: 0 auto
+  display: flex
+  
+  .col
+    flex: 1
+
+    &:not(:last-child)
+      margin-right: $grid-gutter-horizontal
+
+@media (max-width: 37.5em)
+  .flex-grid
+    display: block
+
+    .col
+      margin-right: 0 !important
+      
+      &:not(:last-child)
+        margin-bottom: $grid-gutter-vertical
+      

@@ -1,0 +1,25 @@
+.news-box
+  position: relative
+
+  &::before
+    content: ''
+    display: inline-block
+    height: 1px
+    width: 100%
+    border-radius: 60%
+    background-color: rgba($color-gray-dark, .2)
+    position: absolute
+    bottom: -1rem
+
+  @media (min-width: 37.5em)
+    &--left
+      &::after
+        content: ''
+        display: inline-block
+        height: 100%
+        width: 1px
+        border-radius: 60%
+        background-color: rgba($color-gray-dark, .2)
+        position: absolute
+        top: 0
+        right: -2.6rem

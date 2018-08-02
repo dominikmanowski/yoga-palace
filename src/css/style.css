@@ -42,17 +42,16 @@ body {
 
 .heading-secondary {
   font-size: 3.5rem;
-  font-weight: 400;
+  font-weight: 600;
   color: rgba(26, 32, 29, 0.85);
   text-transform: uppercase;
-  margin-bottom: 2.5rem; }
+  margin-bottom: 10rem; }
 
 .heading-tertiary {
   font-size: 2rem;
-  font-weight: 400;
+  font-weight: 500;
   color: rgba(26, 32, 29, 0.85);
-  text-transform: uppercase;
-  margin-bottom: 1.5rem; }
+  text-transform: uppercase; }
 
 .paragraph {
   font-size: 1.6rem; }
@@ -112,10 +111,27 @@ body {
       top: 0;
       right: -2.6rem; } }
 
+.timetable__heading {
+  background-color: #EDC92F; }
+
+.timetable__box {
+  background-color: rgba(237, 201, 47, 0.85); }
+
+.timetable__cell {
+  font-size: 1.7rem;
+  list-style: none; }
+  .timetable__cell:nth-child(odd) {
+    color: #EBF3EF;
+    background-color: rgba(7, 70, 150, 0.85); }
+  .timetable__cell:not(:last-child) {
+    border-bottom: 1px solid rgba(26, 32, 29, 0.7); }
+  .timetable__cell:hover {
+    font-weight: 500; }
+
 .header {
   position: relative;
   min-height: 95vh;
-  background-image: linear-gradient(135deg, rgba(246, 226, 138, 0.6) 10%, rgba(35, 118, 221, 0.4) 100%), url(../img/header-background-small.jpg);
+  background-image: linear-gradient(135deg, rgba(246, 226, 138, 0.6) 10%, rgba(7, 70, 150, 0.4) 100%), url(../img/header-background-small.jpg);
   background-size: cover;
   background-position: top; }
   .header__text-box {
@@ -145,4 +161,10 @@ body {
 
 .section-news {
   background-image: linear-gradient(to bottom right, rgba(235, 243, 239, 0.4) 70%, rgba(119, 168, 141, 0.4) 100%);
+  padding: 10rem 2rem; }
+
+.section-schedule {
+  background-image: linear-gradient(to bottom right, rgba(235, 243, 239, 0.4) 70%, rgba(119, 168, 141, 0.4) 100%), url("../img/schedule-background-small.jpg");
+  background-size: cover;
+  background-position: bottom;
   padding: 10rem 2rem; }

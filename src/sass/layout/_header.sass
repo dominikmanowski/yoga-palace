@@ -1,9 +1,17 @@
 .header
   position: relative
   min-height: 95vh
-  background-image: linear-gradient(135deg, rgba($color-primary-light, 0.6) 10%, rgba($color-teriary-dark, .4) 100%), url(../img/header-background-small.jpg)
+  background-image: url(../img/header-background-small.jpg)
   background-size: cover
-  background-position: top
+  background-position: right
+
+  &__text-background
+    +absolute-center
+    top: 44%
+    left: 51%
+    background-image: url(../img/grunge-banner-set-2-6.png)
+    opacity: .3
+      
 
   &__text-box
     +absolute-center

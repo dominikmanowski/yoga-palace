@@ -1,18 +1,21 @@
 .timetable
 
   &__heading
-    background-color: $color-primary
+    background-color: #000
+    color: $color-gray-dark !important 
 
   &__box
-    background-color: rgba($color-primary, .85)
+    background-color: rgba(#000, .85)
+    width: 30rem
+    margin: 0 auto
 
   &__cell
     font-size: 1.7rem
     list-style: none
+    color: $color-secondary-light
 
     &:nth-child(odd)
-      color: $color-secondary-light
-      background-color: rgba($color-teriary-dark, .85)
+      background-color: rgba(#383A3F, .5)
 
 
     &:not(:last-child)

@@ -13,11 +13,13 @@ html(lang="en")
   body
 
   header.header
+    .header__text-background
+      img(src="../img/grunge-banner-set-2-6.png")
     .header__text-box
       h1.heading-primary
         span.heading-primary--main Yoga
         span.heading-primary--sub Palace
-      a(href="#").btn Discover yoga with us
+      a(href="#").btn.u-margin-top-small Discover yoga with us
   main
     section.section-news
       .u-center-text
@@ -26,29 +28,47 @@ html(lang="en")
       .row.flex-grid
         .col
           .news-box.news-box--left
-            h3.heading-tertiary 01.08 Lorem, ipsum dolor.
+            .news-box__img-box
+              img(src="../img/news-01.jpg").news-box__img
+            h3.heading-tertiary Lorem, ipsum dolor.
+            p.date 01 Aug 2018
             p.paragraph Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia veritatis accusantium ipsam blanditiis sequi? Libero inventore maiores nihil excepturi. Sint?
         .col
           .news-box
-            h3.heading-tertiary 27.07 Lorem ipsum dolor sit amet.
+            .news-box__img-box
+              img(src="../img/news-02.jpg").news-box__img
+            h3.heading-tertiary Lorem ipsum dolor sit amet.
+            p.date 27 Jul 2018
             p.paragraph Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit deleniti ea, asperiores beatae minus possimus alias reprehenderit qui molestias vel libero illum.
       .row.flex-grid
         .col
           .news-box.news-box--left
-            h3.heading-tertiary 25.07 Lorem, ipsum dolor.
+            .news-box__img-box
+              img(src="../img/news-03.jpg").news-box__img
+            h3.heading-tertiary Lorem, ipsum dolor.
+            p.date 25 Jul 2018
             p.paragraph Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia veritatis accusantium ipsam blanditiis sequi? Libero inventore maiores nihil excepturi. Sint?
         .col
           .news-box
-            h3.heading-tertiary 20.07 Lorem, ipsum dolor sit amet consectetur adipisicing.
+            .news-box__img-box
+              img(src="../img/news-04.jpg").news-box__img
+            h3.heading-tertiary Lorem, ipsum dolor sit amet.
+            p.date 20 Jul 2018
             p.paragraph Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit deleniti ea, asperiores beatae minus possimus alias reprehenderit qui molestias vel libero illum.
       .row.flex-grid
         .col
           .news-box.news-box--left
-            h3.heading-tertiary 15.07 Lorem, ipsum dolor.
+            .news-box__img-box
+              img(src="../img/news-05.jpg").news-box__img
+            h3.heading-tertiary Lorem, ipsum dolor.
+            p.date 15 Jul 2018
             p.paragraph Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia veritatis accusantium ipsam blanditiis sequi? Libero inventore maiores nihil excepturi. Sint?
         .col
           .news-box
-            h3.heading-tertiary 07.07 Lorem ipsum dolor sit amet.
+            .news-box__img-box
+              img(src="../img/news-06.jpg").news-box__img
+            h3.heading-tertiary Lorem ipsum dolor sit amet.
+            p.date 07 Jul 2018
             p.paragraph Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit deleniti ea, asperiores beatae minus possimus alias reprehenderit qui molestias vel libero illum.
     
     section.section-schedule
@@ -61,25 +81,38 @@ html(lang="en")
               .col
                 .timetable__box
                   .timetable__heading.u-center-text
-                    h3.heading-tertiary Room 1
+                    p.timetable__room Room 1
                   ul
-                    li.timetable__cell 07:00 - 08:25 Yoga I John
-                    li.timetable__cell 10:00 - 11:25 Air Yoga Amanda
-                    li.timetable__cell 11:00 - 12:25 Yoga II Amanda
-                    li.timetable__cell 15:30 - 16:55 Yoga 0/I Ben
-                    li.timetable__cell 17:00 - 18:25 Yang&Yin Yoga Martha
-                    li.timetable__cell 18:30 - 19:55 Yoga 0 Julia
-                    li.timetable__cell 20:00 - 21:25 Yoga I Amanda
+                    li.timetable__cell 07.00 - 08.25 Yoga I John
+                    li.timetable__cell 10.00 - 11.25 Air Yoga Amanda
+                    li.timetable__cell 11.00 - 12.25 Yoga II Amanda
+                    li.timetable__cell 15.30 - 16.55 Yoga 0/I Ben
+                    li.timetable__cell 17.00 - 18.25 Yang&Yin Yoga Martha
+                    li.timetable__cell 18.30 - 19.55 Yoga 0 Julia
+                    li.timetable__cell 20.00 - 21.25 Yoga I Amanda
 
               .col
                 .timetable__box
                   .timetable__heading.u-center-text
-                    h3.heading-tertiary Room 2
+                    p.timetable__room Room 2
                   ul
-                    li.timetable__cell 07:00 - 08:25 Yoga I Martha
-                    li.timetable__cell 10:00 - 11:25 Yoga II John
-                    li.timetable__cell 11:00 - 12:25 Yang Yoga Julia
-                    li.timetable__cell 15:30 - 16:55 Yoga 0/I Amanda
-                    li.timetable__cell 17:00 - 18:25 Yin Yoga Ben
-                    li.timetable__cell 18:30 - 19:55 Yoga 0 Martha
-                    li.timetable__cell 20:00 - 21:25 Yoga I Julia
+                    li.timetable__cell 07.00 - 08.25 Yoga I Martha
+                    li.timetable__cell 10.00 - 11.25 Yoga II John
+                    li.timetable__cell 11.00 - 12.25 Yang Yoga Julia
+                    li.timetable__cell 15.30 - 16.55 Yoga 0/I Amanda
+                    li.timetable__cell 17.00 - 18.25 Yin Yoga Ben
+                    li.timetable__cell 18.30 - 19.55 Yoga 0 Martha
+                    li.timetable__cell 20.00 - 21.25 Yoga I Julia
+
+              .col
+                .timetable__box
+                  .timetable__heading.u-center-text
+                    p.timetable__room Room 3
+                  ul
+                    li.timetable__cell 07.00 - 08.25 Yoga II Martina
+                    li.timetable__cell 10.00 - 11.25 Dance Yoga Silvia
+                    li.timetable__cell 11.00 - 12.25 Yoga I Julia
+                    li.timetable__cell 15.30 - 16.55 Yoga 0 Matt
+                    li.timetable__cell 17.00 - 18.25 Ashtanga Ben
+                    li.timetable__cell 18.30 - 19.55 Yoga 0 Martha
+                    li.timetable__cell 20.00 - 21.25 Yoga I Julia

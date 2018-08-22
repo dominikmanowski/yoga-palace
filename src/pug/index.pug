@@ -13,8 +13,8 @@ html(lang="en")
   body
 
   header.header
-    .header__text-background
-      img(src="../img/grunge-banner-set-2-6.png")
+    //- .header__text-background
+    //-   img(src="../img/header-background-1.png")
     .header__text-box
       h1.heading-primary
         span.heading-primary--main Yoga
@@ -23,6 +23,8 @@ html(lang="en")
   main
     section.section-news
       .u-center-text
+        .section-news__header-background
+          img(src="../header-background-1", alt="")
         h2.heading-secondary News
       
       .row.flex-grid
@@ -93,7 +95,7 @@ html(lang="en")
               .col
                 .timetable__box
                   .timetable__heading.u-center-text
-                    p.timetable__room Room 1
+                    h3.heading-quaternary Monday
                   ul
                     li.timetable__cell 07.00 - 08.25 Yoga I John
                     li.timetable__cell 10.00 - 11.25 Air Yoga Amanda
@@ -106,7 +108,7 @@ html(lang="en")
               .col
                 .timetable__box
                   .timetable__heading.u-center-text
-                    p.timetable__room Room 2
+                    h3.heading-quaternary Tuseday
                   ul
                     li.timetable__cell 07.00 - 08.25 Yoga I Martha
                     li.timetable__cell 10.00 - 11.25 Yoga II John
@@ -119,7 +121,7 @@ html(lang="en")
               .col
                 .timetable__box
                   .timetable__heading.u-center-text
-                    p.timetable__room Room 3
+                    h3.heading-quaternary Wednesday
                   ul
                     li.timetable__cell 07.00 - 08.25 Yoga II Martina
                     li.timetable__cell 10.00 - 11.25 Dance Yoga Silvia
@@ -128,3 +130,46 @@ html(lang="en")
                     li.timetable__cell 17.00 - 18.25 Ashtanga Ben
                     li.timetable__cell 18.30 - 19.55 Yoga 0 Martha
                     li.timetable__cell 20.00 - 21.25 Yoga I Julia
+
+            .row.flex-grid      
+              .col
+                .timetable__box
+                  .timetable__heading.u-center-text
+                    h3.heading-quaternary Thursday
+                  ul
+                    li.timetable__cell 07.00 - 08.25 Yoga I John
+                    li.timetable__cell 10.00 - 11.25 Air Yoga Amanda
+                    li.timetable__cell 11.00 - 12.25 Yoga II Amanda
+                    li.timetable__cell 15.30 - 16.55 Yoga 0/I Ben
+                    li.timetable__cell 17.00 - 18.25 Yang&Yin Yoga Martha
+                    li.timetable__cell 18.30 - 19.55 Yoga 0 Julia
+                    li.timetable__cell 20.00 - 21.25 Yoga I Amanda
+
+              .col
+                .timetable__box
+                  .timetable__heading.u-center-text
+                    h3.heading-quaternary Friday
+                  ul
+                    li.timetable__cell 07.00 - 08.25 Yoga I Martha
+                    li.timetable__cell 10.00 - 11.25 Yoga II John
+                    li.timetable__cell 11.00 - 12.25 Yang Yoga Julia
+                    li.timetable__cell 15.30 - 16.55 Yoga 0/I Amanda
+                    li.timetable__cell 17.00 - 18.25 Yin Yoga Ben
+                    li.timetable__cell 18.30 - 19.55 Yoga 0 Martha
+                    li.timetable__cell 20.00 - 21.25 Yoga I Julia
+
+              .col
+                .timetable__box
+                  .timetable__heading.u-center-text
+                    h3.heading-quaternary Sunday
+                  ul
+                    li.timetable__cell 07.00 - 08.25 Yoga II Martina
+                    li.timetable__cell 10.00 - 11.25 Dance Yoga Silvia
+                    li.timetable__cell 11.00 - 12.25 Yoga I Julia
+                    li.timetable__cell 15.30 - 16.55 Yoga 0 Matt
+                    li.timetable__cell 17.00 - 18.25 Ashtanga Ben
+                    li.timetable__cell 18.30 - 19.55 Yoga 0 Martha
+                    li.timetable__cell 20.00 - 21.25 Yoga I Julia
+
+    footer
+      a(href="https://pngtree.com/freepng/vector-hand-painted-brush-strokes_182407.html") Graphics from pngtree.com

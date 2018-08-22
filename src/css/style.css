@@ -46,16 +46,27 @@ body {
     letter-spacing: 3.5rem; }
 
 .heading-secondary {
-  font-size: 4rem;
-  font-weight: 600;
-  color: rgba(26, 32, 29, 0.85);
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: rgba(26, 32, 29, 0.8);
   text-transform: uppercase;
-  margin-bottom: 10rem; }
+  margin-bottom: 10rem;
+  padding: 0 10rem;
+  padding-bottom: 1rem;
+  background-image: url(../img/header-background.png);
+  background-repeat: no-repeat;
+  background-position: center; }
 
 .heading-tertiary {
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 600;
   color: rgba(26, 32, 29, 0.85);
+  text-transform: uppercase; }
+
+.heading-quaternary {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: rgba(244, 247, 247, 0.85);
   text-transform: uppercase; }
 
 .paragraph {
@@ -151,12 +162,13 @@ body {
 
 .timetable__heading {
   background-color: #000;
-  color: #1A201D !important; }
+  color: #1A201D; }
 
 .timetable__box {
   background-color: rgba(0, 0, 0, 0.85);
   width: 30rem;
-  margin: 0 auto; }
+  margin: 0 auto;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
 
 .timetable__cell {
   font-size: 1.7rem;
@@ -180,10 +192,10 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    top: 44%;
+    top: 43%;
     left: 51%;
-    background-image: url(../img/grunge-banner-set-2-6.png);
-    opacity: .3; }
+    opacity: .3;
+    filter: invert(1); }
   .header__text-box {
     position: absolute;
     top: 50%;

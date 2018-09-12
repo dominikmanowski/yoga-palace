@@ -1,0 +1,30 @@
+.card
+  height: 22rem
+  perspective: 150rem
+  position: relative
+
+  &__side
+    padding: 1.7rem 4rem
+    background-color: $color-primary-light
+    border-radius: 3px
+    overflow: hidden
+    backface-visibility: hidden
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .15)
+    transition: all .4s ease
+    position: absolute
+    width: 100%
+    top: 0
+    left: 0
+
+    &--front
+      height: 22rem
+
+    &--back
+      transform: rotateY(-180deg)
+      height: 22rem
+
+  &:hover &__side--front
+    transform: rotateY(180deg)
+
+  &:hover &__side--back
+    transform: rotateY(0deg)

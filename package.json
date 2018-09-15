@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch:pug": "pug ./src/pug/index.pug  -o ./src/ -p index.html -P -w", 
+    "watch:pug": "pug ./src/pug/index.pug  -o ./src/ -p index.html -P -w",
     "watch:sass": "node-sass ./src/sass/main.sass ./src/css/style.css -w",
     "serve": "browser-sync start --server './src/' --files './src/css/*.css, './src/index.html -b 'chromium-browser'",
     "start": "npm-run-all --parallel serve watch:pug watch:sass",
@@ -25,5 +25,8 @@
     "postcss-cli": "^6.0.0",
     "pug": "^2.0.3",
     "sass-loader": "^7.0.3"
+  },
+  "dependencies": {
+    "pug-cli": "^1.0.0-alpha6"
   }
 }

@@ -17,4 +17,13 @@ function getTeachers() {
         .catch(err => console.log(err))
 }
 
-getTeachers();  
+getTeachers();
+
+const navbar = document.querySelector(".navigation");
+
+let navbarY = navbar.offsetTop;
+
+window.addEventListener("scroll", () => {
+    let windowY = window.scrollY;
+    windowY >= navbarY ? navbar.classList.add("to-top") : navbar.classList.remove("to-top");
+});

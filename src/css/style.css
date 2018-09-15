@@ -260,6 +260,38 @@ body {
       .flex-grid .col:not(:last-child) {
         margin-bottom: 2.5rem; } }
 
+.navigation {
+  position: absolute;
+  top: 2.5rem;
+  left: 2.5rem;
+  right: 2.5rem;
+  z-index: 1000;
+  background-color: rgba(26, 32, 29, 0.6);
+  transition: top 0.1s;
+  transition: background-color 0.4s;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+  .navigation__list {
+    display: flex;
+    list-style: none; }
+  .navigation__item {
+    padding: 1.5rem 2.5rem; }
+  .navigation__link {
+    font-size: 1.8rem;
+    color: #f4f7f7;
+    text-decoration: none;
+    transition: all 0.1s ease-in; }
+    .navigation__link--logo {
+      font-weight: 700; }
+    .navigation__link:hover {
+      color: #79a8a9; }
+  .navigation__toggle-btn {
+    display: none; }
+
+.to-top {
+  position: fixed;
+  top: 0;
+  background-color: #1A201D; }
+
 section {
   padding: 10rem 2rem; }
 

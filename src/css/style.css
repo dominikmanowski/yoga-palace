@@ -288,6 +288,9 @@ body {
   .navigation__toggle-btn {
     display: none; }
 
+.active {
+  color: #79a8a9; }
+
 .to-top {
   position: fixed;
   top: 0;

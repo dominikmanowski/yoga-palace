@@ -10,13 +10,13 @@ html(lang="en")
 
     title Yoga Palace
   
-  body#top
+  body
 
   .navigation
     nav.navigation__nav
       ul.navigation__list
         li.navigation__item
-          a(href="#top").navigation__link.navigation__link--logo.smooth-scroll Yoga Palace
+          a(href="#section-header").navigation__link.navigation__link--logo.smooth-scroll.active Yoga Palace
         li.navigation__item
           a(href="#section-news").navigation__link.smooth-scroll News
         li.navigation__item
@@ -25,14 +25,15 @@ html(lang="en")
           a(href="#section-teachers").navigation__link.smooth-scroll Teachers
     button.navigation__toggle-btn &nbsp;
 
-  header.header#section-header
-    .header__text-background
-      img(src="../img/header-background-1.png")
-    .header__text-box
-      h1.heading-primary
-        span.heading-primary--main Yoga
-        span.heading-primary--sub Palace
-      a(href="#").btn.u-margin-top-small Discover yoga with us
+  header.header
+    section#section-header
+      .header__text-background
+        img(src="../img/header-background-1.png")
+      .header__text-box
+        h1.heading-primary
+          span.heading-primary--main Yoga
+          span.heading-primary--sub Palace
+        a(href="#").btn.u-margin-top-small Discover yoga with us
   main
     section.section-news#section-news
       .u-center-text

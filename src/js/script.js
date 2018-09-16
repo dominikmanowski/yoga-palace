@@ -1,3 +1,5 @@
+// Fetching teachers
+
 const teachersBoxes = document.querySelectorAll(".teacher-box");
 const teacherNamesBack = document.querySelectorAll(".teacher-box__name--back")
 
@@ -19,6 +21,9 @@ function getTeachers() {
 
 getTeachers();
 
+
+//  Sticky navbar
+
 const navbar = document.querySelector(".navigation");
 
 let navbarY = navbar.offsetTop;
@@ -26,4 +31,28 @@ let navbarY = navbar.offsetTop;
 window.addEventListener("scroll", () => {
     let windowY = window.scrollY;
     windowY >= navbarY ? navbar.classList.add("to-top") : navbar.classList.remove("to-top");
+});
+
+
+// Changing active class
+
+const changeActive = (entries, observer) => {
+	entries.forEach((entry) => {
+		if(entry.isIntersecting && entry.intersectionRatio >= 0.55) {
+			document.querySelector('.active').classList.remove('active');
+			const id = entry.target.getAttribute('id');
+            document.querySelector(`[href="#${id}"]`).classList.add('active');
+		}
+	});
+}
+
+const options = {
+	threshold: 0.55
+}
+
+const observer = new IntersectionObserver(changeActive, options);
+
+const sections = document.querySelectorAll('section');
+sections.forEach((section) => {
+	observer.observe(section);
 });

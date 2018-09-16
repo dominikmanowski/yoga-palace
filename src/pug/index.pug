@@ -16,18 +16,16 @@ html(lang="en")
     nav.navigation__nav
       ul.navigation__list
         li.navigation__item
-          a(href="#").navigation__link.navigation__link--logo Yoga Palace
+          a(href="#section-header").navigation__link.navigation__link--logo.smooth-scroll Yoga Palace
         li.navigation__item
-          a(href="#").navigation__link News
+          a(href="#section-news").navigation__link.smooth-scroll News
         li.navigation__item
-          a(href="#").navigation__link Schedule
+          a(href="#section-schedule").navigation__link.smooth-scroll Schedule
         li.navigation__item
-          a(href="#").navigation__link Teachers
-        li.navigation__item
-          a(href="#").navigation__link Teachers
+          a(href="#section-teachers").navigation__link.smooth-scroll Teachers
     button.navigation__toggle-btn &nbsp;
 
-  header.header
+  header.header#section-header
     .header__text-background
       img(src="../img/header-background-1.png")
     .header__text-box
@@ -36,7 +34,7 @@ html(lang="en")
         span.heading-primary--sub Palace
       a(href="#").btn.u-margin-top-small Discover yoga with us
   main
-    section.section-news
+    section.section-news#section-news
       .u-center-text
         h2.heading-secondary News
       
@@ -98,7 +96,7 @@ html(lang="en")
             p.date 07 Jul 2018
             p.paragraph Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit deleniti ea, asperiores beatae minus possimus alias reprehenderit qui molestias vel libero illum.
     
-    section.section-schedule
+    section.section-schedule#section-schedule
       .u-center-text
         h2.heading-secondary Schedule
 
@@ -184,7 +182,7 @@ html(lang="en")
                     li.timetable__cell 18.30 - 19.55 Yoga 0 Martha
                     li.timetable__cell 20.00 - 21.25 Yoga I Julia
     
-    section.section-teachers
+    section.section-teachers#section-teachers
       .u-center-text
         h2.heading-secondary Teachers
         .row.flex-grid.teachers

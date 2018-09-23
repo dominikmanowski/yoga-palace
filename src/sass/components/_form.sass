@@ -1,0 +1,87 @@
+.form
+    text-align: left
+
+    &__group:not(:last-child)
+        margin-bottom: 1rem
+
+    &__input
+        font-family: inherit
+        color: inherit
+        font-size: 1.5rem
+        padding: 1.5rem 2rem
+        border-radius: 3px
+        border: none
+        border-bottom: 3px solid transparent
+        display: block
+        width: 100%
+        transition: all .18s ease-in
+
+        &:focus
+            outline: none
+            box-shadow: 0 1rem 2rem rgba($color-black, .1)
+            border-bottom: 3px solid $color-primary-medium
+
+            &:invalid
+                border-bottom: 3px solid $color-warning
+
+        
+        &::-moz-focus-inner
+            border: 0
+            box-shadow: 0 1rem 2rem rgba($color-black, .1)
+            border-bottom: 3px solid $color-primary-medium
+
+    &__label
+        display: block
+        font-size: 1.5rem
+        color: $color-gray-medium
+        padding-left: 2rem
+        margin-top: 1rem
+        transition: all .2s ease-in
+        
+    &__input:placeholder-shown + &__label
+        opacity: 0
+        visibility: hidden
+        transform: translateY(-5rem)
+
+    &__checkbox
+        display: none
+
+    &__checkbox-label
+        font-size: 1.6rem
+        padding-left: 4.5rem
+        cursor: pointer
+        position: relative
+
+    &__checkbox-btn
+        display: inline-block
+        height: 2.3rem
+        width: 2.3rem
+        border: 3px solid $color-primary
+        border-radius: 20%
+        position: absolute
+        left: 1.3rem
+        top: -5%
+        bottom: 0
+
+        &::before,
+        &::after
+            content: ""
+            display: block
+            background-color: $color-primary
+            border-radius: 30%
+            position: absolute
+            opacity: 0
+
+        &::before
+            height: .3rem
+            width: .55rem
+            transform: translate(.25rem, .9rem) rotate(45deg)
+
+        &::after
+            height: .3rem
+            width: 1.3rem
+            transform: translate(.35rem, .68rem) rotate(-57deg)
+
+    &__checkbox:checked + &__checkbox-label &__checkbox-btn::before,
+    &__checkbox:checked + &__checkbox-label &__checkbox-btn::after
+        opacity: 1

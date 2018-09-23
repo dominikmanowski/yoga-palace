@@ -16,6 +16,7 @@
         <li class="navigation__item"><a class="navigation__link smooth-scroll" href="#section-news">News</a></li>
         <li class="navigation__item"><a class="navigation__link smooth-scroll" href="#section-schedule">Schedule</a></li>
         <li class="navigation__item"><a class="navigation__link smooth-scroll" href="#section-teachers">Teachers</a></li>
+        <li class="navigation__item"><a class="navigation__link smooth-scroll" href="#section-contact">Contact</a></li>
       </ul>
     </nav>
     <button class="navigation__toggle-btn">&nbsp;</button>
@@ -308,7 +309,37 @@
         </div>
       </div>
     </section>
-    <footer><a href="https://pngtree.com/freepng/vector-hand-painted-brush-strokes_182407.html">Graphics from pngtree.com</a></footer>
+    <section class="section-contact" id="section-contact">
+      <div class="u-center-text">
+        <h2 class="heading-secondary">Contact</h2>
+        <div class="row">
+          <div class="col">
+            <div class="contact__form">
+              <form class="form" action="#">
+                <div class="form__group">
+                  <input class="form__input" type="email" placeholder="Email address" required id="email">
+                  <label class="form__label" for="email">Email address</label>
+                </div>
+                <div class="form__group">
+                  <textarea class="form__input form__input--textarea" placeholder="Your message" required rows="5" id="message"></textarea>
+                  <label class="form__label" for="message">Your message</label>
+                </div>
+                <div class="form__group">
+                  <div class="form__submit-group">
+                    <button class="btn" disabled id="privacy-btn">Submit</button>
+                    <input class="form__checkbox" type="checkbox" id="privacy-checkbox">
+                    <label class="form__checkbox-label" for="privacy-checkbox"><span class="form__checkbox-btn"></span>I agree to privacy policy</label>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col">
+            <div class="map-box"><img class="map-box__img" src="../img/map.png" alt="map"></div>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="js/script.js"></script>
   </main>
 </html>

@@ -23,6 +23,8 @@ html(lang="en")
           a(href="#section-schedule").navigation__link.smooth-scroll Schedule
         li.navigation__item
           a(href="#section-teachers").navigation__link.smooth-scroll Teachers
+        li.navigation__item
+          a(href="#section-contact").navigation__link.smooth-scroll Contact
     button.navigation__toggle-btn &nbsp;
 
   header.header
@@ -250,8 +252,38 @@ html(lang="en")
                 h3.heading-tertiary.teacher-box__name--back Teacher name 
                 p.teacher-box__description Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, enim eius quis minus unde rem doloremque doloribus nemo tenetur beatae saepe fuga. Vero odio reiciendis, perferendis impedit libero porro necessitatibus eaque facilis maiores non rerum, sunt.
 
+    section.section-contact#section-contact
+      .u-center-text
+        h2.heading-secondary Contact
 
-    footer
-      a(href="https://pngtree.com/freepng/vector-hand-painted-brush-strokes_182407.html") Graphics from pngtree.com
+        .row
+          .col
+            .contact__form
+              form(action="#").form
+
+                .form__group
+                  input(type="email" placeholder="Email address" required).form__input#email
+                  label(for="email").form__label Email address
+
+                .form__group
+                  textarea( placeholder="Your message" required rows="5").form__input.form__input--textarea#message
+                  label(for="message").form__label Your message
+
+                .form__group
+                  .form__submit-group
+
+                    button(disabled).btn#privacy-btn Submit
+                    
+                    input(type="checkbox").form__checkbox#privacy-checkbox
+                    label(for="privacy-checkbox").form__checkbox-label
+                      span.form__checkbox-btn
+                      | I agree to privacy policy
+
+
+
+          .col
+            .map-box
+              img(src="../img/map.png", alt="map").map-box__img
+      
 
     script(src="js/script.js")

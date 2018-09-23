@@ -56,3 +56,12 @@ const sections = document.querySelectorAll('section');
 sections.forEach((section) => {
 	observer.observe(section);
 });
+
+// Submit button
+
+const privacyCheckbox = document.getElementById('privacy-checkbox');
+const submitBtn = document.getElementById('privacy-btn');
+
+privacyCheckbox.onchange = function() {
+    submitBtn.disabled = !this.checked;
+};

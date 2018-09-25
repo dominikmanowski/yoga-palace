@@ -6,14 +6,23 @@ body
 .heading-primary
   font-size: 7rem
   font-weight: 700
-  // background-image: linear-gradient(-20deg, rgba($color-primary-light, .85) 45%, rgba($color-primary, .7) 100%)
-  // -webkit-background-clip: text
-  // -webkit-text-fill-color: transparent
-  // background-clip: text
-  // color: transparent
   color: $color-primary-light
   text-transform: uppercase
   margin-bottom: 4rem
+  position: relative
+
+  &::after
+    content: ""
+    position: absolute
+    top: 1.5rem
+    right: 0
+    bottom: -1.5rem
+    left: 0
+    background-image: url("../img/header-background-1.png")
+    background-size: 100%
+    background-repeat: no-repeat
+    opacity: 0.5
+    z-index: -1
 
   &--main
     display: block

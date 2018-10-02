@@ -1,22 +1,108 @@
 .navigation
-  position: absolute
-  top: 2.5rem
-  left: 2.5rem
-  right: 2.5rem
-  z-index: 1000
-  background-color: rgba($color-gray-dark, 0.6)
-  transition: top 0.1s
-  transition: background-color 0.4s
-  box-shadow: 0 1.5rem 4rem rgba($color-black, .15)
 
+  &__checkbox
+    display: none
+
+  &__checkbox-label
+    display: none
+    z-index: 2000
+    background-color: rgba($color-gray-dark, 0.8)
+
+    +respond(phone)
+      display: block
+      width: 4rem
+      height: 4rem
+      border-radius: 30%
+      box-shadow: 0 1.5rem 4rem rgba($color-black, .15)
+      position: fixed
+      top: 2rem
+      right: 2rem
+
+  &__icon
+    +absolute-center
+
+    
+    
+    &,
+    &::before,
+    &::after
+      display: inline-block
+      background-color: $color-white
+      border-radius: 2px
+      width: 2.3rem
+      height: 2px
+        
+    &::before,
+    &::after 
+      content: ""
+      position: absolute
+      left: 0
+      transition: all .2s
   
+  &__checkbox-label &__icon::before 
+    top: -0.7rem
+  
+  &__checkbox-label &__icon::after 
+    top: 0.7rem
+
+  &__checkbox:checked + &__checkbox-label &__icon 
+    background-color: transparent
+
+  &__checkbox:checked + &__checkbox-label &__icon::before    
+    top: 0
+    transform: rotate(135deg)
+
+  &__checkbox:checked + &__checkbox-label &__icon::after 
+    top: 0
+    transform: rotate(-135deg)
+
+
+  &__nav
+    position: absolute
+    top: 2.5rem
+    left: 2.5rem
+    right: 2.5rem
+    z-index: 1000
+    background-color: rgba($color-gray-dark, 0.6)
+    transition: top 0.1s
+    transition: background-color 0.4s
+
+    +respond(phone)
+      position: fixed
+      height: 100%
+      top: 0
+      left: 0
+      bottom: 0
+      right: 0
+      background-color: $color-gray-dark
+      box-shadow: none
+      transition: transform 0.6s cubic-bezier(0.8, 0.4, 0.9, 0.6)
+      transform: translateX(-100%)
+
+      &.open
+        transform: translateX(0)
+
+    +respond(tab-land)
+      top: 0
+      left: 0
+      right: 0
 
   &__list
     display: flex
     list-style: none
 
+    +respond(phone)
+      flex-direction: column
+      height: 100%
+      padding: 4rem 0
+      align-items: center
+      justify-content: space-around
+
   &__item
     padding: 1.5rem 2.5rem
+
+    +respond(phone)
+      padding: 0
 
   &__link
     font-size: 1.8rem
@@ -24,14 +110,16 @@
     text-decoration: none
     transition: all 0.1s ease-in
 
+    +respond(phone)
+      display: inline-block
+      margin: 1.5rem 2.5rem
+      font-size: 3rem
+
     &--logo
       font-weight: 700
 
     &:hover
       color: $color-primary-medium
-
-  &__toggle-btn
-    display: none
 
 .active
   color: $color-primary-medium

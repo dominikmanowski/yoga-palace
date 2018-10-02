@@ -13,6 +13,9 @@ html(lang="en")
   body
 
   .navigation
+    input(type="checkbox").navigation__checkbox#nav-toggle
+    label(for="nav-toggle").navigation__checkbox-label
+      span.navigation__icon &nbsp;
     nav.navigation__nav
       ul.navigation__list
         li.navigation__item
@@ -25,7 +28,7 @@ html(lang="en")
           a(href="#section-teachers").navigation__link.smooth-scroll Teachers
         li.navigation__item
           a(href="#section-contact").navigation__link.smooth-scroll Contact
-    button.navigation__toggle-btn &nbsp;
+
 
   header.header
     section#section-header

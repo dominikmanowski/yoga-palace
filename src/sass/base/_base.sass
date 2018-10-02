@@ -9,9 +9,22 @@ html
   font-size: 62.5% //1 rem = 10px; 10px/16px = 62.5%
   scroll-behavior: smooth
 
+  +respond(tab-land)
+    font-size: 56.25%
+
+  +respond(tab-port)
+    font-size: 50%
+  
+  +respond(big-desktop)
+    font-size: 75%
+
 body
   box-sizing: border-box
   padding: 2.5rem
+
+  +respond(tab-land)
+    padding: 0
+    
 
 img
   display: block

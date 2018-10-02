@@ -24,13 +24,15 @@ getTeachers();
 
 //  Sticky navbar
 
-const navbar = document.querySelector(".navigation");
+const navbar = document.querySelector(".navigation__nav");
 
 let navbarY = navbar.offsetTop;
 
 window.addEventListener("scroll", () => {
-    let windowY = window.scrollY;
-    windowY >= navbarY ? navbar.classList.add("to-top") : navbar.classList.remove("to-top");
+    if (window.innerWidth > 600) {
+        let windowY = window.scrollY;
+        windowY >= navbarY ? navbar.classList.add("to-top") : navbar.classList.remove("to-top");
+    }
 });
 
 
@@ -65,3 +67,18 @@ const submitBtn = document.getElementById('privacy-btn');
 privacyCheckbox.onchange = function() {
     submitBtn.disabled = !this.checked;
 };
+
+// Navigation toggle
+
+const navToggler = document.getElementById('nav-toggle');
+const nav = document.querySelector('.navigation__nav');
+const navLinks = document.querySelectorAll('.navigation__link');
+
+navToggler.onchange = function() {
+    this.checked ? nav.classList.add('open') : nav.classList.remove('open');
+}
+
+navLinks.forEach(link => link.addEventListener('click', () => {
+    nav.classList.remove('open');
+    navToggler.checked = false;
+}))

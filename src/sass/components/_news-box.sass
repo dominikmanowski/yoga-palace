@@ -1,6 +1,9 @@
 .news-box
   position: relative
 
+  +respond(phone)
+    min-height: 13.5rem
+
   &::before
     content: ''
     display: inline-block

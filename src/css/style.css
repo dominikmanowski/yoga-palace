@@ -159,6 +159,24 @@ body {
     transform: rotateY(180deg); }
   .card:hover .card__side--back {
     transform: rotateY(0deg); }
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+    .card {
+      height: auto;
+      border-radius: 3px;
+      background-color: #fefefe;
+      box-shadow: 0 1.5rem 4rem rgba(12, 12, 12, 0.15); }
+      .card__side {
+        height: auto;
+        position: relative;
+        box-shadow: none; }
+        .card__side--front {
+          padding-bottom: 0;
+          height: auto; }
+        .card__side--back {
+          padding-top: 0;
+          height: auto;
+          transform: rotateY(0);
+          height: auto; } }
 
 .form {
   text-align: left; }
@@ -297,6 +315,9 @@ body {
     text-transform: uppercase; }
   .teacher-box__description {
     font-size: 1.4rem; }
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+    .teacher-box__name--back {
+      display: none; } }
 
 .timetable {
   display: flex;
@@ -333,6 +354,9 @@ body {
     display: inline-block;
     padding-top: 1.5rem;
     border-top: 1px solid #f4f7f7; }
+    @media (max-width: 37.5em) {
+      .footer__navigation, .footer__copyright {
+        text-align: center; } }
   .footer__list {
     list-style: none; }
     .footer__list--links {
@@ -345,6 +369,10 @@ body {
     display: inline-block;
     width: 90%;
     float: right; }
+    @media (max-width: 37.5em) {
+      .footer__copyright {
+        margin-top: 1.5rem;
+        float: none; } }
   .footer__link {
     position: relative; }
     .footer__link:link, .footer__link:visited {
@@ -388,10 +416,16 @@ body {
   margin: 0 auto;
   display: flex;
   padding-bottom: 2.5rem; }
+  @media (max-width: 37.5em) {
+    .row {
+      display: block; } }
   .row .col {
     flex: 1; }
     .row .col:not(:last-child) {
       margin-right: 5rem; }
+      @media (max-width: 37.5em) {
+        .row .col:not(:last-child) {
+          margin-right: 0; } }
 
 @media (max-width: 37.5em) {
   .flex-grid {
@@ -540,6 +574,10 @@ body {
   padding: 5rem 6rem;
   background-color: #f4f7f7;
   height: 100%; }
+  @media (max-width: 37.5em) {
+    .contact__form {
+      width: 100%;
+      margin-bottom: 1.5rem; } }
 
 .contact__info-box {
   padding: 3rem 2rem;
@@ -549,15 +587,12 @@ body {
   display: inline-block;
   width: 2.4rem;
   height: 2.4rem; }
-  .contact__icon--mail {
-    background-image: url(../img/iconmonstr-email-11.svg); }
-  .contact__icon--phone {
-    background-image: url(../img/iconmonstr-phone-9.svg); }
 
 .map-box {
   overflow: hidden;
   transition: all 1s ease; }
   .map-box__img {
+    max-width: 100%;
     transition: all 1s ease; }
     .map-box__img:hover {
       transform: scale(1.5); }

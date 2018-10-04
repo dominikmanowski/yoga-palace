@@ -10,6 +10,9 @@
         padding-top: 1.5rem
         border-top: 1px solid $color-primary-light
 
+        +respond(phone)
+            text-align: center
+
     &__list
         list-style: none
 
@@ -26,6 +29,10 @@
         display: inline-block
         width: 90%
         float: right
+
+        +respond(phone)
+            margin-top: 1.5rem
+            float: none
 
     &__link
         position: relative

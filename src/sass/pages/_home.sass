@@ -19,6 +19,10 @@
     background-color: $color-primary-light
     height: 100%
 
+    +respond(phone)
+      width: 100%
+      margin-bottom: 1.5rem
+
   &__info-box
     padding: 3rem 2rem
     text-align: left
@@ -29,17 +33,12 @@
     width: 2.4rem
     height: 2.4rem
 
-    &--mail
-      background-image: url(../img/iconmonstr-email-11.svg)
-    &--phone
-      background-image: url(../img/iconmonstr-phone-9.svg)
-
-
 .map-box
   overflow: hidden
   transition: all 1s ease
 
   &__img
+    max-width: 100%
     transition: all 1s ease
     
     &:hover
